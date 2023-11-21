@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Weather Station</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+    }
+    
+    .content {
+      position: relative;
+      
+      /* bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px; */
+
+    /* background-color: #bdb7b7; */
+    background: rgba(184, 181, 181, 0.3);
+    max-width: 400px;
+    vertical-align: center;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    }
+    
+    </style>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+      </video>
+      
+    <div class="content">
+        <h1>Current Weather</h1>
+        <div class="data">
+            <p>Temperature: <span id="temperature">Loading...</span> °C</p>
+            <p>Humidity: <span id="humidity">Loading...</span> %</p>
+            <p>Air Quality Index: <span id="aqi">Loading...</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
